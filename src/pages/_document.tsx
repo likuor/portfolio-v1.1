@@ -5,7 +5,6 @@ const Document = () => (
     <Head />
     <body>
       <Main />
-      <a href='http://google'>google</a>
       <NextScript />
     </body>
   </Html>
