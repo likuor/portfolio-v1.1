@@ -1,8 +1,9 @@
 import { Sora } from '@next/font/google';
 
+import Navbar from './Navbar';
 import { LayoutProps } from './type';
 
-// font settings
+// TODO font settings
 const sora = Sora({
   subsets: ['latin'],
   variable: '--font-sora',
@@ -13,6 +14,7 @@ const Layout = ({ children }: LayoutProps) => (
   <div
     className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
   >
+    <Navbar />
     {children}
   </div>
 );
