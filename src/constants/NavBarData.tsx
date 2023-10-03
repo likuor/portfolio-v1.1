@@ -1,9 +1,4 @@
-import {
-  HiHome,
-  HiUser,
-  HiViewColumns,
-  HiEnvelope,
-} from 'react-icons/hi2';
+import { HiHome, HiUser, HiViewColumns, HiEnvelope } from 'react-icons/hi2';
 
 const NavBarData = [
   { id: 1, name: 'home', path: '/', icon: <HiHome /> },

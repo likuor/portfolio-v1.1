@@ -5,7 +5,7 @@ import NavBarData from '@/constants/NavBarData';
 import NavbarController from './controller';
 
 const Navbar = () => {
-  const { pathname } = NavbarController()
+  const { pathname } = NavbarController();
 
   return (
     <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
@@ -16,17 +16,16 @@ const Navbar = () => {
       >
         {NavBarData.map((link) => (
           <Link
-            className={`${link.path === pathname && 'text-accent'
-              } relative flex items-center group hover:text-accent transition-all duration-300`}
+            className={`${
+              link.path === pathname && 'text-accent'
+            } relative flex items-center group hover:text-accent transition-all duration-300`}
             href={link.path}
             key={link.id}
           >
             {/* tooltip */}
             <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
               <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
-                <div className='text-[12px] leading-none font-semibold capitalize'>
-                  {link.name}
-                </div>
+                <div className='text-[12px] leading-none font-semibold capitalize'>{link.name}</div>
                 {/* triangle */}
                 <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2' />
               </div>

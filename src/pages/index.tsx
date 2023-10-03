@@ -1,8 +1,9 @@
-import Home from "../components/pages/Home";
+import Home from '../components/pages/Home';
 
-const index = () =>
+const index = () => (
   <>
     <Home />
   </>
+);
 
 export default index;

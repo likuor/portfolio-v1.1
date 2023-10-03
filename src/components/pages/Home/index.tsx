@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '@/constants/motion/variants';
 
-const Home = () =>
+const Home = () => (
   <div className='bg-primary/60 h-full'>
     {/* text */}
     <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
@@ -27,12 +27,12 @@ const Home = () =>
           exit='hidden'
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-          aspernatur dolores ut.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum quam reprehenderit
+          vero, tenetur voluptatem nulla aut aspernatur dolores ut.
         </motion.p>
       </div>
     </div>
-  </div>;
+  </div>
+);
 
 export default Home;
