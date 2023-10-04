@@ -1,12 +1,9 @@
-// components
 import { motion } from 'framer-motion';
 
 import Bulb from '@/components/decoration/bulb';
 import Circle from '@/components/decoration/circle';
+import WorkSlider from '@/components/slider';
 import { fadeIn } from '@/constants/motion/variants';
-// import Bulb from '../../components/Bulb';
-// import Circles from '../../components/Circles';
-// import WorkSlider from '../../components/WorkSlider';
 
 const Work = () => (
   <div className='h-full bg-primary/30 py-36 flex items-center'>
@@ -44,7 +41,7 @@ const Work = () => (
           exit='hidden'
           className='w-full xl:max-w-[65%]'
         >
-          {/* <WorkSlider /> */}
+          <WorkSlider />
         </motion.div>
       </div>
     </div>
