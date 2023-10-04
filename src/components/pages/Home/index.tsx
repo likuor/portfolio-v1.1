@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+import Avatar from '@/components/decoration/avatar';
 import { fadeIn } from '@/constants/motion/variants';
 
 const Home = () => (
@@ -30,7 +31,39 @@ const Home = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum quam reprehenderit
           vero, tenetur voluptatem nulla aut aspernatur dolores ut.
         </motion.p>
+        {/* btn */}
+        {/* <div className='flex justify-center xl:hidden relative'>
+          <ProjectsBtn />
+        </div>
+        <motion.div
+          variants={fadeIn('down', 0.4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='hidden xl:flex'
+        >
+          <ProjectsBtn />
+        </motion.div> */}
       </div>
+    </div>
+
+    {/* image */}
+    <div className='w-[1200px] h-full absolute right-0 bottom-0'>
+      {/* bg img */}
+      <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0' />
+      {/* particles */}
+      {/* <ParticlesContainer /> */}
+      {/* avatar img */}
+      <motion.div
+        variants={fadeIn('up', 0.5)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
+      >
+        <Avatar />
+      </motion.div>
     </div>
   </div>
 );
