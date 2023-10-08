@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+import ParticlesContainer from '@/components/decoration/Particles';
 import Avatar from '@/components/decoration/avatar';
 import { fadeIn } from '@/constants/motion/variants';
 
@@ -52,7 +53,7 @@ const Home = () => (
       {/* bg img */}
       <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0' />
       {/* particles */}
-      {/* <ParticlesContainer /> */}
+      <ParticlesContainer />
       {/* avatar img */}
       <motion.div
         variants={fadeIn('up', 0.5)}
