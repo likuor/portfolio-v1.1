@@ -94,7 +94,7 @@ export const aboutData: AboutDataType[] = [
     info: [
       {
         id: 0,
-        title: 'Fullstack Developer - Tellext',
+        title: 'Fullstack Developer - Tellext - Canada',
         stage: '2023 - Present',
       },
       {
@@ -104,12 +104,12 @@ export const aboutData: AboutDataType[] = [
       },
       {
         id: 2,
-        title: 'Web Developer & Lead Admin - Anycarry',
+        title: 'Web Developer & Lead Admin - Anycarry - Japan',
         stage: '2020 - 2021',
       },
       {
         id: 3,
-        title: 'Sales area manager - KDDI',
+        title: 'Sales area manager - KDDI - Japan',
         stage: '2018 - 2020',
       },
     ],
@@ -121,13 +121,13 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Web & Mobile Application Development',
-        school: 'Cornerstone International Community College of Canada',
+        school: 'Cornerstone International Community College of Canada - Canada',
         stage: '2022',
       },
       {
         id: 1,
         title: 'Bachelor of Law',
-        school: 'Nihon University',
+        school: 'Nihon University - Japan',
         stage: '2018',
       },
     ],
