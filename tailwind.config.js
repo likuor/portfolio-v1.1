@@ -18,7 +18,7 @@ module.exports = {
         primary: '#0F1626',
         secondary: '#393A47',
         accent: '#F13024',
-        main: '#0CC7AB',
+        sub: '#0CC7AB',
       },
       backgroundImage: {
         bgHome: 'url("/images/bgHome.avif")',

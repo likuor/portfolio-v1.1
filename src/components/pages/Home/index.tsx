@@ -19,7 +19,7 @@ const Home = () => (
         >
           Koki Sakai <br />
           {/* <span className='text-accent'>Full-stack Developer</span> */}
-          <span className='bg-clip-text text-transparent bg-gradient-to-r from-accent to-main'>
+          <span className='bg-clip-text text-transparent bg-gradient-to-r from-accent to-sub'>
             Full-stack Developer
           </span>
         </motion.h1>
