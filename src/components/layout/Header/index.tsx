@@ -10,7 +10,13 @@ const Header = () => (
         {/* logo */}
         <Link href='/'>
           {/* TODO make logo */}
-          <Image src='/logo.svg' width={220} height={48} alt='Koki Sakai logo' priority />
+          <Image
+            src='/images/topImage.png'
+            width={220}
+            height={48}
+            alt='Koki Sakai logo'
+            priority
+          />
         </Link>
         {/* SocialMedias */}
         <SocialMedias />

@@ -7,7 +7,7 @@ import { LayoutProps } from './type';
 
 const Layout = ({ children }: LayoutProps) => (
   <div
-    className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
+    className={`page bg-bgLayout text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
   >
     <TopImg />
     <Navbar />

@@ -15,15 +15,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#131424',
+        primary: '#0F1626',
         secondary: '#393A47',
         accent: '#F13024',
+        sub: '#0CC7AB',
       },
       backgroundImage: {
-        // explosion: 'url("/bg-explosion.png")',
-        // circles: 'url("/bg-circles.png")',
+        bgHome: 'url("/images/bgHome.jpg")',
         circleStar: 'url("/icons/circle-star.svg")',
-        // site: 'url("/site-bg.svg")',
+        bgLayout: 'url("/icons/bgLayout.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
