@@ -21,7 +21,7 @@ module.exports = {
         sub: '#0CC7AB',
       },
       backgroundImage: {
-        bgHome: 'url("/images/bgHome.avif")',
+        bgHome: 'url("/images/bgHome.jpg")',
         circleStar: 'url("/icons/circle-star.svg")',
         bgLayout: 'url("/icons/bgLayout.svg")',
       },
