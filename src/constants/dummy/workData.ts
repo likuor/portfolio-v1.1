@@ -1,4 +1,4 @@
-// TODO add my works
+// TODO adjust the height properly
 export const workSlider = {
   slides: [
     {
@@ -6,23 +6,27 @@ export const workSlider = {
       images: [
         {
           id: 1,
-          title: 'title',
-          path: '/images/dummy/thumb1.jpg',
+          title: 'Portfolio-v2',
+          path: '/images/dummy/thumb4.jpg',
+          url: '/',
         },
         {
           id: 2,
-          title: 'title',
-          path: '/images/dummy/thumb2.jpg',
+          title: 'luluti',
+          path: '/images/works/luluti.png',
+          url: 'https://luluti.jp/?gad=1&gclid=Cj0KCQjwm66pBhDQARIsALIR2zAI69HFnuHbwVbjeeiV58TIy15ffxPqmmFToRYVj7JOBZnPnydQ1A0aAlScEALw_wcB',
         },
         {
           id: 3,
-          title: 'title',
-          path: '/images/dummy/thumb3.jpg',
+          title: 'mummar',
+          path: '/images/works/mummar.png',
+          url: 'https://mummar.com/',
         },
         {
           id: 4,
-          title: 'title',
-          path: '/images/dummy/thumb4.jpg',
+          title: 'Chillip',
+          path: '/images/works/Chillip.png',
+          url: 'https://main.d1q845p9ygn1yh.amplifyapp.com/login',
         },
       ],
     },
@@ -31,8 +35,15 @@ export const workSlider = {
       images: [
         {
           id: 1,
-          title: 'title',
-          path: '/images/dummy/thumb4.jpg',
+          title: 'Blog-app',
+          path: '/images/works/blogapp.png',
+          url: 'https://blogapp-bykoki.onrender.com/',
+        },
+        {
+          id: 2,
+          title: 'Portfolio-v1',
+          path: '/images/works/portfolio.png',
+          url: 'https://kokisakai.netlify.app/',
         },
       ],
     },
