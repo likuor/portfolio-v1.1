@@ -17,9 +17,9 @@ const Home = () => (
           exit='hidden'
           className='h1'
         >
-          Koki Sakai <br />
+          Turning Ideas <br />
           <span className='bg-clip-text text-transparent bg-gradient-to-r from-accent to-sub'>
-            Fullstack Developer
+            into Software App
           </span>
         </motion.h1>
 
@@ -31,8 +31,9 @@ const Home = () => (
           exit='hidden'
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum quam reprehenderit
-          vero, tenetur voluptatem nulla aut aspernatur dolores ut.
+          A professional Fullstack developer having huge passion for building apps to help lots of
+          people in the world. Perform my tasks diligently to make it certainly and support to
+          teammates as much as I can in empathetic manner.
         </motion.p>
         {/* button */}
         <div className='flex justify-center xl:hidden relative'>

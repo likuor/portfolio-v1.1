@@ -28,8 +28,8 @@ const Work = () => (
             exit='hidden'
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eveniet dignissimos
-            distinctio tempore harum laudantium.
+            Client works as a freelance and also group/private works when I was a student are ready
+            to see
           </motion.p>
         </div>
 
