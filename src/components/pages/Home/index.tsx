@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
+import Hero3D from '@/components/decoration/3d';
 import ParticlesContainer from '@/components/decoration/Particles';
 import ProjectButton from '@/components/decoration/ProjectButton';
-import Avatar from '@/components/decoration/avatar';
 import { fadeIn } from '@/constants/motion/variants';
 
 const Home = () => (
@@ -51,7 +51,6 @@ const Home = () => (
       </div>
     </div>
 
-    {/* image */}
     <div className='w-[1200px] h-full absolute right-0 bottom-0'>
       <div className='bg-none xl:bg-bgHome xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0' />
       <ParticlesContainer />
@@ -63,7 +62,7 @@ const Home = () => (
         transition={{ duration: 1, ease: 'easeInOut' }}
         className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
       >
-        <Avatar />
+        <Hero3D />
       </motion.div>
     </div>
   </div>
