@@ -14,12 +14,7 @@ const RenderKonnichiwa = () => {
 
   return (
     <mesh ref={ref}>
-      <Text
-        scale={[2, 2, 1]}
-        color='#0CC7AB'
-        anchorX='center'
-        anchorY='middle'
-      >
+      <Text scale={[2, 2, 1]} color='#0CC7AB' anchorX='center' anchorY='middle'>
         Konnichiwa
       </Text>
     </mesh>
@@ -28,21 +23,14 @@ const RenderKonnichiwa = () => {
 
 const RenderWelcome = () => {
   const ref = useRef<any>();
-  useFrame(
-    (_, delta) => {
-      ref.current.rotation.x += 1 * delta
-      ref.current.rotation.y += 0.5 * delta
-    }
-  );
+  useFrame((_, delta) => {
+    ref.current.rotation.x += 1 * delta;
+    ref.current.rotation.y += 0.5 * delta;
+  });
 
   return (
     <mesh ref={ref}>
-      <Text
-        scale={[1, 1, 1]}
-        color='#F13024'
-        anchorX='center'
-        anchorY='middle'
-      >
+      <Text scale={[1, 1, 1]} color='#F13024' anchorX='center' anchorY='middle'>
         Welcome!
       </Text>
     </mesh>
@@ -50,12 +38,7 @@ const RenderWelcome = () => {
 };
 
 const RenderDragMe = () => (
-  <Text
-    scale={[2, 2, 1]}
-    color='#f5d393'
-    anchorX='center'
-    anchorY='top-baseline'
-  >
+  <Text scale={[2, 2, 1]} color='#f5d393' anchorX='center' anchorY='top-baseline'>
     Drag me
   </Text>
 );
