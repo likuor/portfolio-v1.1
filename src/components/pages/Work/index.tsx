@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
-import Bulb from '@/components/decoration/bulb';
 import Circle from '@/components/decoration/circle';
+import Fire from '@/components/decoration/fire';
 import WorkSlider from '@/components/slider';
 import { fadeIn } from '@/constants/motion/variants';
 
@@ -45,7 +45,7 @@ const Work = () => (
         </motion.div>
       </div>
     </div>
-    <Bulb />
+    <Fire />
   </div>
 );
 

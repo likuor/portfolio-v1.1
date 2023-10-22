@@ -22,7 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         bgHome: 'url("/images/bgHome.jpg")',
-        circleStar: 'url("/icons/circle-star.svg")',
+        circleStar: 'url("/icons/circleStar.svg")',
         bgLayout: 'url("/icons/bgLayout.svg")',
       },
       animation: {
