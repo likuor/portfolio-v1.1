@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { CgFileDocument } from 'react-icons/Cg';
 import { RiGithubLine, RiLinkedinBoxLine, RiFacebookLine } from 'react-icons/ri';
 
 const SocialMedias = () => (
@@ -26,6 +27,14 @@ const SocialMedias = () => (
       target='_blank'
     >
       <RiFacebookLine />
+    </Link>
+    <Link
+      href='https://drive.google.com/file/d/1a7pgwcadtxDxPwKfialUOJb0qs0rwdIk/view?usp=share_link'
+      className='hover:text-accent transition-all duration-300'
+      rel='noopener noreferrer'
+      target='_blank'
+    >
+      <CgFileDocument />
     </Link>
   </div>
 );
