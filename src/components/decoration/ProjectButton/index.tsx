@@ -9,7 +9,7 @@ const ProjectButton = () => (
       className='relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group'
     >
       <Image
-        src='/images/rounded-text.png'
+        src='/images/roundedText.png'
         width={141}
         height={148}
         alt='project button'

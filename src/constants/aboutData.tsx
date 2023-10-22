@@ -109,7 +109,7 @@ export const aboutData: AboutDataType[] = [
       },
       {
         id: 3,
-        title: 'Sales area manager - KDDI - Japan',
+        title: 'District Sales Manager - KDDI - Japan',
         stage: '2018 - 2020',
       },
     ],
