@@ -1,8 +1,10 @@
+import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import { useForm } from 'react-hook-form';
 import { BsArrowRight } from 'react-icons/bs';
 
+import { validationSchema } from '@/components/utils/validationSchema';
 import { fadeIn } from '@/constants/motion/variants';
 
 const Contact = () => {
@@ -16,7 +18,7 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormType>({ mode: 'onChange' });
+  } = useForm<FormType>({ mode: 'onChange', resolver: zodResolver(validationSchema) });
 
   const onSubmit = (data: FormType) => {
     console.log(data);
@@ -45,16 +47,13 @@ const Contact = () => {
             className='flex-1 flex flex-col gap-6 w-full mx-auto'
           >
             {/* input group */}
-            <form action='' onSubmit={handleSubmit(onSubmit)} className=' flex-col w-full'>
+            <form action='' onSubmit={handleSubmit(onSubmit)} className='flex-col w-full space-y-6'>
               <input
                 id='name'
                 type='text'
                 placeholder='Name'
                 className='input'
-                {...register('name', {
-                  required: 'Name is required',
-                  minLength: { value: 2, message: 'Over 2 letters of your name is required' },
-                })}
+                {...register('name')}
               />
               <span>{errors.name?.message as ReactNode}</span>
               <input
@@ -62,7 +61,7 @@ const Contact = () => {
                 type='email'
                 placeholder='Email'
                 className='input'
-                {...register('email', { required: 'Email is required' })}
+                {...register('email')}
               />
               <span>{errors.email?.message as ReactNode}</span>
               <input
@@ -70,14 +69,14 @@ const Contact = () => {
                 type='text'
                 placeholder='Subject'
                 className='input'
-                {...register('subject', { required: 'Subject is required' })}
+                {...register('subject')}
               />
               <span>{errors.subject?.message as ReactNode}</span>
               <textarea
                 id='message'
                 placeholder='Message'
                 className='textarea'
-                {...register('message', { required: 'Message is required' })}
+                {...register('message')}
               />
               <span>{errors.message?.message as ReactNode}</span>
               <button
