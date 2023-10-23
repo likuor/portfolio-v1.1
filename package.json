@@ -9,20 +9,33 @@
     "lint": "next lint",
     "fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
-    "test": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' && npm run format"
+    "test": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' && npm run format",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "@next/font": "^13.5.3",
+    "@react-three/drei": "^9.88.4",
+    "@react-three/fiber": "^8.15.3",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
+    "@types/three": "^0.157.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.16.4",
     "next": "13.3.0",
     "react": "18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "react-hook-form": "^7.47.0",
+    "react-icons": "^4.11.0",
+    "react-tsparticles": "^2.12.2",
+    "swiper": "^10.3.1",
+    "three": "^0.157.0",
+    "tsparticles": "^2.12.0",
+    "typescript": "5.0.4",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.58.0",

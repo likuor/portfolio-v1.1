@@ -1,18 +1,17 @@
-import { Sora } from '@next/font/google';
+import sora from '@/constants/font';
 
+import Header from './Header';
+import Navbar from './Navbar';
+import TopImg from './TopImage';
 import { LayoutProps } from './type';
-
-// font settings
-const sora = Sora({
-  subsets: ['latin'],
-  variable: '--font-sora',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
-});
 
 const Layout = ({ children }: LayoutProps) => (
   <div
-    className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
+    className={`page bg-bgLayout text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
   >
+    <TopImg />
+    <Navbar />
+    <Header />
     {children}
   </div>
 );
