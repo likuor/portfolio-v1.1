@@ -4,8 +4,8 @@ import { ReactNode } from 'react';
 import { useForm } from 'react-hook-form';
 import { BsArrowRight } from 'react-icons/bs';
 
-import { validationSchema } from '@/components/utils/validationSchema';
 import { fadeIn } from '@/constants/motion/variants';
+import { validationSchema } from '@/utils/validationSchema';
 
 const Contact = () => {
   type FormType = {
