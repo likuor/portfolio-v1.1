@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CgFileDocument } from 'react-icons/Cg';
+import { CgFileDocument } from 'react-icons/cg';
 import { RiGithubLine, RiLinkedinBoxLine, RiFacebookLine } from 'react-icons/ri';
 
 const SocialMedias = () => (
