@@ -38,7 +38,7 @@ const RenderWelcome = () => {
 };
 
 const RenderDragMe = () => (
-  <Text scale={[2, 2, 1]} color='#f5d393' anchorX='center' anchorY='top-baseline'>
+  <Text scale={[2, 2, 1]} anchorX='center' anchorY='top-baseline'>
     Drag me
   </Text>
 );
