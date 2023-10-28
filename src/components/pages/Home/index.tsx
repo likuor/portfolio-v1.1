@@ -31,9 +31,8 @@ const Home = () => (
           exit='hidden'
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          A professional Fullstack developer having huge passion for building apps to help lots of
-          people in the world. Perform my tasks diligently to make it certainly and support to
-          teammates as much as I can in empathetic manner.
+          Hi, I&apos;m Koki. A professional Fullstack developer having huge passion for building
+          apps to help lots of people in the world.
         </motion.p>
         {/* button */}
         <div className='flex justify-center xl:hidden relative'>

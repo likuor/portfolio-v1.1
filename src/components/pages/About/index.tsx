@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import CountUp from 'react-countup';
 
 import Avatar from '@/components/decoration/avatar';
@@ -34,7 +35,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-sub'>stories</span> birth magnificent designs.
+            Let me <span className='text-sub'>solve</span> problems{' '}
+            <span className='text-accent'>.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -43,9 +45,8 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I&apos;ve done remote work
-            for agencies, counsulted for startups, and collaborated on digital products for business
-            and consumer use.
+            Perform my tasks diligently to make it certainly and support to teammates as much as I
+            can in empathetic manner.
           </motion.p>
           <motion.div
             variants={fadeIn('right', 0.6)}
@@ -123,9 +124,17 @@ const About = () => {
               >
                 {/* title */}
                 <div className='font-light mb-2 md:mb-0'>
-                  <span>
-                    {item.title} - {item.stage}
-                  </span>
+                  {item.url ? (
+                    <Link href={item.url} rel='noopener noreferrer' target='_blank'>
+                      <span className='text-decoration-line: underline hover:text-accent transition-all duration-300'>
+                        {item.title} - {item.stage}
+                      </span>
+                    </Link>
+                  ) : (
+                    <span>
+                      {item.title} - {item.stage}
+                    </span>
+                  )}
                   <br />
                   <span>{item.school}</span>
                 </div>
