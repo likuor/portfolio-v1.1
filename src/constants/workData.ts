@@ -7,8 +7,8 @@ export const workSlider = {
         {
           id: 1,
           title: 'Portfolio-v2',
-          path: '/images/dummy/thumb4.jpg',
-          url: '/',
+          path: '/images/works/portfoliov2.png',
+          url: 'https://portfolio-v1-1-dev.vercel.app/work',
         },
         {
           id: 2,

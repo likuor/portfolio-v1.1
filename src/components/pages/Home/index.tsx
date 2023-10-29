@@ -31,7 +31,7 @@ const Home = () => (
           exit='hidden'
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          Hi, I&apos;m Koki. A professional Fullstack developer having huge passion for building
+          Hi! I&apos;m Koki, a professional Fullstack developer having huge passion for building
           apps to help lots of people in the world.
         </motion.p>
         {/* button */}
