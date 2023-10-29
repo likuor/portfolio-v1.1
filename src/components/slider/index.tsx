@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { workSlider } from '@/constants/dummy/workData';
+import { workSlider } from '@/constants/workData';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
