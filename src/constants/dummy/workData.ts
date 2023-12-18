@@ -6,21 +6,21 @@ export const workSlider = {
       images: [
         {
           id: 1,
-          title: 'Portfolio-v2',
-          path: '/images/dummy/thumb4.jpg',
-          url: '/',
-        },
-        {
-          id: 2,
           title: 'luluti',
           path: '/images/works/luluti.png',
           url: 'https://luluti.jp/?gad=1&gclid=Cj0KCQjwm66pBhDQARIsALIR2zAI69HFnuHbwVbjeeiV58TIy15ffxPqmmFToRYVj7JOBZnPnydQ1A0aAlScEALw_wcB',
         },
         {
-          id: 3,
+          id: 2,
           title: 'mummar',
           path: '/images/works/mummar.png',
           url: 'https://mummar.com/',
+        },
+        {
+          id: 3,
+          title: 'Supabase Blog',
+          path: '/images/works/Supabase-blog.png',
+          url: 'https://blog-supabase-five.vercel.app/',
         },
         {
           id: 4,
@@ -35,7 +35,7 @@ export const workSlider = {
       images: [
         {
           id: 1,
-          title: 'Blog-app',
+          title: 'CMS-blog',
           path: '/images/works/blogapp.png',
           url: 'https://blogapp-bykoki.onrender.com/',
         },
