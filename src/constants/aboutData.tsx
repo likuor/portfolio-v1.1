@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaReact, FaJava } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaReact } from 'react-icons/fa';
 import {
   SiJavascript,
   SiTypescript,
@@ -7,7 +7,7 @@ import {
   SiPython,
   SiPhp,
   SiExpress,
-  SiCakephp,
+  // SiCakephp,
   SiLaravel,
   SiNextdotjs,
   SiTerraform,
@@ -46,12 +46,11 @@ export const aboutData: AboutDataType[] = [
         icons: [
           { id: 1, icon: <SiJavascript /> },
           { id: 2, icon: <SiTypescript /> },
+          { id: 6, icon: <SiPhp /> },
+          { id: 5, icon: <SiPython /> },
           { id: 3, icon: <FaHtml5 /> },
           { id: 4, icon: <FaCss3 /> },
-          { id: 5, icon: <SiPython /> },
-          { id: 6, icon: <SiPhp /> },
           { id: 7, icon: <SiThreedotjs /> },
-          { id: 8, icon: <FaJava /> },
         ],
       },
       {
@@ -63,29 +62,31 @@ export const aboutData: AboutDataType[] = [
           { id: 3, icon: <SiNodedotjs /> },
           { id: 4, icon: <SiExpress /> },
           { id: 5, icon: <SiLaravel /> },
-          { id: 6, icon: <SiCakephp /> },
         ],
       },
       {
         id: 2,
-        title: 'Database',
+        title: 'Database & Others',
         icons: [
           { id: 1, icon: <SiMysql /> },
           { id: 2, icon: <SiPostgresql /> },
           { id: 3, icon: <SiAmazondynamodb /> },
           { id: 4, icon: <SiFirebase /> },
           { id: 5, icon: <SiMongodb /> },
+          { id: 6, icon: <SiDocker /> },
+          { id: 7, icon: <SiAmazonaws /> },
+          { id: 8, icon: <SiTerraform /> },
         ],
       },
-      {
-        id: 3,
-        title: 'Infrastructure',
-        icons: [
-          { id: 1, icon: <SiDocker /> },
-          { id: 2, icon: <SiAmazonaws /> },
-          { id: 3, icon: <SiTerraform /> },
-        ],
-      },
+      // {
+      //   id: 3,
+      //   title: 'Infrastructure',
+      //   icons: [
+      //     { id: 1, icon: <SiDocker /> },
+      //     { id: 2, icon: <SiAmazonaws /> },
+      //     { id: 3, icon: <SiTerraform /> },
+      //   ],
+      // },
     ],
   },
   {
@@ -95,22 +96,17 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Fullstack Developer - Tellext - Canada',
-        stage: '2023 - Present',
+        stage: 'Feb,2023 - Nov,2023',
       },
       {
         id: 1,
-        title: 'Freelance Web Developer',
-        stage: '2021 - 2023',
+        title: 'Freelance Developer',
+        stage: 'Jun,2021 - Aug,2023',
       },
       {
         id: 2,
-        title: 'Web Developer & Lead Admin - Anycarry - Japan',
-        stage: '2020 - 2021',
-      },
-      {
-        id: 3,
-        title: 'District Sales Manager - KDDI - Japan',
-        stage: '2018 - 2020',
+        title: 'Lead Associate Developer & Admin - Anycarry - Japan',
+        stage: 'Jan,2020 - May,2021',
       },
     ],
   },
@@ -122,13 +118,13 @@ export const aboutData: AboutDataType[] = [
         id: 0,
         title: 'Web & Mobile Application Development',
         school: 'Cornerstone International Community College of Canada - Canada',
-        stage: '2022',
+        stage: 'Dec,2023',
       },
       {
         id: 1,
         title: 'Bachelor of Law',
         school: 'Nihon University - Japan',
-        stage: '2018',
+        stage: 'Mar,2018',
       },
     ],
   },
@@ -139,7 +135,7 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Award of NoCode Japan in NoCode Click Hackathon',
-        stage: '2021',
+        stage: 'Jun,2021',
       },
     ],
   },
