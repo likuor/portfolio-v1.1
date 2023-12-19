@@ -40,7 +40,7 @@ const Contact = () => {
                 className='input'
                 {...register('name')}
               />
-              <span>{errors.name?.message as ReactNode}</span>
+              <span className='error-message'>{errors.name?.message as ReactNode}</span>
               <input
                 id='email'
                 type='email'
@@ -48,7 +48,7 @@ const Contact = () => {
                 className='input'
                 {...register('email')}
               />
-              <span>{errors.email?.message as ReactNode}</span>
+              <span className='error-message'>{errors.email?.message as ReactNode}</span>
               <input
                 id='subject'
                 type='text'
@@ -56,14 +56,14 @@ const Contact = () => {
                 className='input'
                 {...register('subject')}
               />
-              <span>{errors.subject?.message as ReactNode}</span>
+              <span className='error-message'>{errors.subject?.message as ReactNode}</span>
               <textarea
                 id='message'
                 placeholder='Message'
                 className='textarea'
                 {...register('message')}
               />
-              <span>{errors.message?.message as ReactNode}</span>
+              <span className='error-message'>{errors.message?.message as ReactNode}</span>
               <div className='flex justify-center'>
                 <button
                   type='submit'
