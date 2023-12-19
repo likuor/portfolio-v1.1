@@ -29,7 +29,7 @@ const SocialMedias = () => (
       <RiFacebookLine />
     </Link>
     <Link
-      href='https://drive.google.com/file/d/1a7pgwcadtxDxPwKfialUOJb0qs0rwdIk/view?usp=share_link'
+      href='https://drive.google.com/file/d/1UnKjMkmt9N9gZawXS_Fj7Io85dkFV4jJ/view?usp=sharing'
       className='hover:text-accent transition-all duration-300'
       rel='noopener noreferrer'
       target='_blank'

@@ -17,9 +17,9 @@ const Home = () => (
           exit='hidden'
           className='h1'
         >
-          Turning Ideas <br />
+          From Ideas <br />
           <span className='bg-clip-text text-transparent bg-gradient-to-r from-accent to-sub'>
-            into Software App
+            to Codes
           </span>
         </motion.h1>
 
@@ -31,8 +31,9 @@ const Home = () => (
           exit='hidden'
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          Hi! I&apos;m Koki, a professional Fullstack developer having huge passion for building
-          apps to help lots of people in the world.
+          Full-stack developer with 2+ years of experience in advanced web technologies.
+          Specializing in Javascript/Typescript, Next.js, React, Node.js, AWS, and building apps of
+          AI robots, EC websites.
         </motion.p>
         {/* button */}
         <div className='flex justify-center xl:hidden relative'>

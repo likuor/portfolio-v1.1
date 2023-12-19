@@ -35,8 +35,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Let me <span className='text-sub'>solve</span> problems{' '}
-            <span className='text-accent'>.</span>
+            Passionately developing <span className='text-accent'>creative</span> apps.
+            {/* Let me <span className='text-sub'>solve</span> problems */}
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -45,8 +45,9 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            Perform my tasks diligently to make it certainly and support to teammates as much as I
-            can in empathetic manner.
+            As a developer passionate about creating custom-built software, I prioritize
+            functionality and convenience. I take pride in building solutions that help people in
+            their daily lives.
           </motion.p>
           <motion.div
             variants={fadeIn('right', 0.6)}

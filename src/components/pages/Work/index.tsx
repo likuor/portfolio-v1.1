@@ -29,7 +29,7 @@ const Work = () => (
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'
           >
             Client works as a freelance and also group/private works when I was a student are ready
-            to see
+            to see.
           </motion.p>
         </div>
 
