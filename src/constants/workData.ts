@@ -24,9 +24,9 @@ export const workSlider = {
         },
         {
           id: 4,
-          title: 'Chillip',
-          path: '/images/works/Chillip.png',
-          url: 'https://main.d1q845p9ygn1yh.amplifyapp.com/login',
+          title: 'Portfolio-v2',
+          path: '/images/works/portfoliov2.png',
+          url: 'https://portfolio-v1-1-dev.vercel.app/work',
         },
       ],
     },
@@ -35,12 +35,18 @@ export const workSlider = {
       images: [
         {
           id: 1,
+          title: 'Chillip',
+          path: '/images/works/Chillip.png',
+          url: 'https://main.d1q845p9ygn1yh.amplifyapp.com/login',
+        },
+        {
+          id: 2,
           title: 'CMS-blog',
           path: '/images/works/blogapp.png',
           url: 'https://blogapp-bykoki.onrender.com/',
         },
         {
-          id: 2,
+          id: 3,
           title: 'Portfolio-v1',
           path: '/images/works/portfolio.png',
           url: 'https://kokisakai.netlify.app/',

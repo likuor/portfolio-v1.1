@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import CountUp from 'react-countup';
 
 import Avatar from '@/components/decoration/avatar';
@@ -35,6 +36,7 @@ const About = () => {
             className='h2'
           >
             Passionately developing <span className='text-accent'>creative</span> apps.
+            {/* Let me <span className='text-sub'>solve</span> problems */}
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -57,7 +59,7 @@ const About = () => {
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <div className='text-2xl xl:text-4xl font-extrabold text-sub mb-2'>
                   <CountUp start={0} end={yearsDevExperience} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
@@ -66,7 +68,7 @@ const About = () => {
               </div>
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <div className='text-2xl xl:text-4xl font-extrabold text-sub mb-2'>
                   <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
@@ -75,7 +77,7 @@ const About = () => {
               </div>
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <div className='text-2xl xl:text-4xl font-extrabold text-sub mb-2'>
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
@@ -102,7 +104,7 @@ const About = () => {
                 tabIndex={0}
                 className={`${
                   index === item.id &&
-                  'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                  'text-sub after:w-[100%] after:bg-sub after:transition-all after:duration-300'
                 }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(item.id)}
                 onKeyDown={(event) => {
@@ -123,9 +125,17 @@ const About = () => {
               >
                 {/* title */}
                 <div className='font-light mb-2 md:mb-0'>
-                  <span>
-                    {item.title} - {item.stage}
-                  </span>
+                  {item.url ? (
+                    <Link href={item.url} rel='noopener noreferrer' target='_blank'>
+                      <span className='text-decoration-line: underline hover:text-accent transition-all duration-300'>
+                        {item.title} - {item.stage}
+                      </span>
+                    </Link>
+                  ) : (
+                    <span>
+                      {item.title} - {item.stage}
+                    </span>
+                  )}
                   <br />
                   <span>{item.school}</span>
                 </div>

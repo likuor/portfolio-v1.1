@@ -7,7 +7,6 @@ import {
   SiPython,
   SiPhp,
   SiExpress,
-  // SiCakephp,
   SiLaravel,
   SiNextdotjs,
   SiTerraform,
@@ -33,6 +32,7 @@ type AboutDataType = {
       icon: JSX.Element;
     }[];
     stage?: string;
+    url?: string;
   }[];
 };
 export const aboutData: AboutDataType[] = [
@@ -135,7 +135,8 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Award of NoCode Japan in NoCode Click Hackathon',
-        stage: 'Jun,2021',
+        stage: 'May,2021',
+        // url: 'https://nocodejapan.org/media/click-hackathon-result-01/#NoCode_Japan_shangRestarea_jiu_jing_huang_guisan',
       },
     ],
   },
