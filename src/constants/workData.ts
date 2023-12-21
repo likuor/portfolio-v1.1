@@ -51,6 +51,23 @@ export const workSlider = {
           path: '/images/works/portfolio.png',
           url: 'https://kokisakai.netlify.app/',
         },
+        {
+          id: 4,
+          title: 'Katsuraba-kitchen',
+          path: '/images/works/Katsuraba_kitchen.png',
+          url: 'https://katsuraba-kitchien.netlify.app/',
+        },
+      ],
+    },
+    {
+      id: 3,
+      images: [
+        {
+          id: 1,
+          title: 'Movie App',
+          path: '/images/works/movie_app.png',
+          url: 'https://movieapp-bykoki.netlify.app/',
+        },
       ],
     },
   ],
