@@ -17,6 +17,10 @@
   color: #f13024;
 }
 
+.error-message {
+  color: #f13024;
+}
+
 @layer base {
   body {
     @apply overflow-hidden leading-relaxed;
@@ -47,7 +51,7 @@
   .textarea {
     @apply w-full h-[140px] md:h-[180px] p-6 rounded-lg resize-none normal-case;
   }
-  .error-message {
-    color: #f13024;
+  .github-icon {
+    @apply absolute top-[18px] lg:top-[48px] right-[0];
   }
 }
