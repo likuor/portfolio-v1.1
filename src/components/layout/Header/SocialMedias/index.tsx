@@ -21,7 +21,7 @@ const SocialMedias = () => (
       <RiLinkedinBoxLine />
     </Link>
     <Link
-      href='https://drive.google.com/file/d/10PTCN8sbawP37HWSqmrHkpDFYES2lgji/view?usp=sharing'
+      href='https://drive.google.com/file/d/10TRSxwjssjDo5fO7eLCr25HSCFUDOPYp/view?usp=sharing'
       className='hover:text-accent transition-all duration-300'
       rel='noopener noreferrer'
       target='_blank'
