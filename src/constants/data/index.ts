@@ -3,3 +3,7 @@ export const DEVELOPER_EXPERIENCE_FROM = {
   month: 0, // January
   day: 1,
 };
+
+export const SEARCH_PARAMS = {
+  TAB: 'tab',
+};

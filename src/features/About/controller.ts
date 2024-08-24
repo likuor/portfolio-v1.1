@@ -1,14 +1,14 @@
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/router';
 
-import { DEVELOPER_EXPERIENCE_FROM } from '@/constants/data';
+import { DEVELOPER_EXPERIENCE_FROM, SEARCH_PARAMS } from '@/constants/data';
 import { aboutData, type AboutData } from '@/constants/data/aboutData';
 import yearsSinceDate from '@/utils/timeCount';
 
 const AboutController = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const selectedTab = (searchParams.get('tab') as keyof AboutData) ?? 'skills';
+  const selectedTab = (searchParams.get(SEARCH_PARAMS.TAB) as keyof AboutData) ?? 'skills';
   const yearsDevExperience = yearsSinceDate(
     DEVELOPER_EXPERIENCE_FROM.year,
     DEVELOPER_EXPERIENCE_FROM.month,
@@ -18,7 +18,7 @@ const AboutController = () => {
 
   const handleClick = (tabTitle: string) => {
     const params = new URLSearchParams(searchParams);
-    params.set('tab', tabTitle);
+    params.set(SEARCH_PARAMS.TAB, tabTitle);
     router.push(
       {
         pathname: router.pathname,
