@@ -19,7 +19,6 @@ import {
 
 type AboutDataType = {
   id: number;
-  title: string;
   info: {
     id: number;
     title: string;
@@ -35,19 +34,20 @@ type AboutDataType = {
 };
 
 type Tabs = {
+  id: number;
   title: 'skills' | 'experience' | 'education' | 'awards';
-}[];
+};
 
-export const aboutTabs: Tabs = [
-  { title: 'skills' },
-  { title: 'experience' },
-  { title: 'education' },
-  { title: 'awards' },
+export const aboutTabs: Tabs[] = [
+  { id: 0, title: 'skills' },
+  { id: 1, title: 'experience' },
+  { id: 2, title: 'education' },
+  { id: 3, title: 'awards' },
 ];
+
 export const aboutData: AboutDataType[] = [
   {
     id: 0,
-    title: 'skills',
     info: [
       {
         id: 0,
@@ -89,7 +89,6 @@ export const aboutData: AboutDataType[] = [
   },
   {
     id: 1,
-    title: 'experience',
     info: [
       {
         id: 0,
@@ -120,7 +119,6 @@ export const aboutData: AboutDataType[] = [
   },
   {
     id: 2,
-    title: 'Education',
     info: [
       {
         id: 0,
@@ -138,7 +136,6 @@ export const aboutData: AboutDataType[] = [
   },
   {
     id: 3,
-    title: 'awards',
     info: [
       {
         id: 0,

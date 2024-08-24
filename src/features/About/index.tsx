@@ -3,7 +3,7 @@ import Link from 'next/link';
 import CountUp from 'react-countup';
 
 import Circle from '@/components/decoration/circle';
-import { aboutData } from '@/constants/data/aboutData';
+import { aboutData, aboutTabs } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
 import Avatar from '@/features/About/_components/avatar';
 
@@ -97,7 +97,7 @@ const About = () => {
           className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
-            {aboutData.map((item) => (
+            {aboutTabs.map((item) => (
               <div
                 key={item.id}
                 role='button'
