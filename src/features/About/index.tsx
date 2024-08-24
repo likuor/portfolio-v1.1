@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
 import Circle from '@/components/decoration/circle';
-import { aboutData, aboutTabs } from '@/constants/data/aboutData';
+import { aboutTabs } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
 import Avatar from '@/features/About/_components/avatar';
 
 import AboutController from './controller';
 
 const About = () => {
-  const { tabIndex, setTabIndex, yearsDevExperience } = AboutController();
+  const { tabIndex, setTabIndex, yearsDevExperience, currentData } = AboutController();
 
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -102,13 +102,13 @@ const About = () => {
                 role='button'
                 tabIndex={0}
                 className={`${
-                  tabIndex === tab.id &&
+                  tabIndex === tab.title &&
                   'text-sub after:w-[100%] after:bg-sub after:transition-all after:duration-300'
                 }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                onClick={() => setTabIndex(tab.id)}
+                onClick={() => setTabIndex(tab.title)}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
-                    setTabIndex(tab.id);
+                    setTabIndex(tab.title);
                   }
                 }}
               >
@@ -117,7 +117,7 @@ const About = () => {
             ))}
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-            {aboutData[tabIndex].info.map((aboutItem) => (
+            {currentData.map((aboutItem) => (
               <div
                 key={aboutItem.id}
                 className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
@@ -130,8 +130,8 @@ const About = () => {
                   <br />
                   <span>{aboutItem.schoolName}</span>
                 </div>
+                {/* icons */}
                 <div className='flex gap-x-4'>
-                  {/* icons */}
                   {aboutItem.icons?.map((icon) => (
                     <div key={icon.id} className='text-2xl text-white'>
                       {icon.icon}
