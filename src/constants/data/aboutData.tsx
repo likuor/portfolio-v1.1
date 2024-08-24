@@ -33,6 +33,17 @@ type AboutDataType = {
     url?: string;
   }[];
 };
+
+type Tabs = {
+  title: 'skills' | 'experience' | 'education' | 'awards';
+}[];
+
+export const aboutTabs: Tabs = [
+  { title: 'skills' },
+  { title: 'experience' },
+  { title: 'education' },
+  { title: 'awards' },
+];
 export const aboutData: AboutDataType[] = [
   {
     id: 0,

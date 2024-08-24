@@ -10,7 +10,7 @@ import Avatar from '@/features/About/_components/avatar';
 import AboutController from './controller';
 
 const About = () => {
-  const { index, setIndex, yearsDevExperience } = AboutController();
+  const { tabIndex, setTabIndex, yearsDevExperience } = AboutController();
 
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -103,13 +103,13 @@ const About = () => {
                 role='button'
                 tabIndex={0}
                 className={`${
-                  index === item.id &&
+                  tabIndex === item.id &&
                   'text-sub after:w-[100%] after:bg-sub after:transition-all after:duration-300'
                 }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                onClick={() => setIndex(item.id)}
+                onClick={() => setTabIndex(item.id)}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
-                    setIndex(item.id);
+                    setTabIndex(item.id);
                   }
                 }}
               >
@@ -118,7 +118,7 @@ const About = () => {
             ))}
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-            {aboutData[index].info.map((item) => (
+            {aboutData[tabIndex].info.map((item) => (
               <div
                 key={item.id}
                 className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
