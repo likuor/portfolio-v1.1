@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { workSlider } from '@/constants/workData';
+import { workSlider } from '@/constants/data/workData';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';

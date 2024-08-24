@@ -5,7 +5,12 @@ import { useForm } from 'react-hook-form';
 
 import { validationSchema } from '@/utils/validationSchema';
 
-import { FormProps } from './type';
+export type FormProps = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 const ContactController = () => {
   const router = useRouter();

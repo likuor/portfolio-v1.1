@@ -3,9 +3,9 @@ import Link from 'next/link';
 import CountUp from 'react-countup';
 
 import Circle from '@/components/decoration/circle';
-import Avatar from '@/components/features/About/_components/avatar';
-import { aboutData } from '@/constants/aboutData';
+import { aboutData } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
+import Avatar from '@/features/About/_components/avatar';
 
 import AboutController from './controller';
 

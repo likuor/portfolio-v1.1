@@ -1,9 +1,14 @@
+import { ReactNode } from 'react';
+
 import sora from '@/constants/font';
 
 import Header from './Header';
 import Navbar from './Navbar';
 import TopImg from './TopImage';
-import { LayoutProps } from './type';
+
+export type LayoutProps = {
+  children: ReactNode;
+};
 
 const Layout = ({ children }: LayoutProps) => (
   <div
