@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
-import Hero3D from '@/components/decoration/3d';
-import ParticlesContainer from '@/components/decoration/Particles';
-import ProjectButton from '@/components/decoration/ProjectButton';
 import { fadeIn } from '@/constants/motion/variants';
+import Hero3D from '@/features/Home/_components/3d';
+import ParticlesContainer from '@/features/Home/_components/Particles';
+import ProjectButton from '@/features/Home/_components/ProjectButton';
 
 const Home = () => (
   <div className='bg-primary/20 h-full'>

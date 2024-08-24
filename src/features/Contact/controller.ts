@@ -3,9 +3,14 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 
-import { validationSchema } from '@/utils/validationSchema';
+import { contactSchema } from '@/features/Contact/schema/contactSchema';
 
-import { FormProps } from './type';
+export type FormProps = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 const ContactController = () => {
   const router = useRouter();
@@ -14,7 +19,7 @@ const ContactController = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormProps>({ mode: 'onChange', resolver: zodResolver(validationSchema) });
+  } = useForm<FormProps>({ mode: 'onChange', resolver: zodResolver(contactSchema) });
 
   const onSubmit = async (data: FormProps) => {
     try {
