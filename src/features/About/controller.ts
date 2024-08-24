@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import yearsSinceDate from '@/helper/timeCount';
+import yearsSinceDate from '@/utils/timeCount';
 
 const AboutController = () => {
   const [index, setIndex] = useState(0);
