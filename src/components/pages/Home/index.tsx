@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-import Hero3D from '@/components/decoration/3d';
-import ParticlesContainer from '@/components/decoration/Particles';
-import ProjectButton from '@/components/decoration/ProjectButton';
+import Hero3D from '@/components/pages/Home/_components/3d';
+import ParticlesContainer from '@/components/pages/Home/_components/Particles';
+import ProjectButton from '@/components/pages/Home/_components/ProjectButton';
 import { fadeIn } from '@/constants/motion/variants';
 
 const Home = () => (
