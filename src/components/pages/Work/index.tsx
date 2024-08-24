@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
 import Circle from '@/components/decoration/circle';
-import Fire from '@/components/decoration/fire';
 import WorkSlider from '@/components/pages/Work/_components/WorkSlider';
+import Fire from '@/components/pages/Work/_components/fire';
 import { fadeIn } from '@/constants/motion/variants';
 
 const Work = () => (
