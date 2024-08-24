@@ -1,16 +1,15 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import CountUp from 'react-countup';
 
 import Circle from '@/components/decoration/circle';
-import { aboutData } from '@/constants/data/aboutData';
+import { aboutTabs } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
 import Avatar from '@/features/About/_components/avatar';
 
 import AboutController from './controller';
 
 const About = () => {
-  const { index, setIndex, yearsDevExperience } = AboutController();
+  const { selectedTab, yearsDevExperience, currentData, handleClick } = AboutController();
 
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -97,51 +96,45 @@ const About = () => {
           className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
-            {aboutData.map((item) => (
+            {aboutTabs.map((tab) => (
               <div
-                key={item.id}
+                key={tab.id}
                 role='button'
                 tabIndex={0}
                 className={`${
-                  index === item.id &&
+                  selectedTab === tab.name &&
                   'text-sub after:w-[100%] after:bg-sub after:transition-all after:duration-300'
                 }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                onClick={() => setIndex(item.id)}
+                onClick={() => {
+                  handleClick(tab.name);
+                }}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
-                    setIndex(item.id);
+                    handleClick(tab.name);
                   }
                 }}
               >
-                {item.title}
+                {tab.name}
               </div>
             ))}
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-            {aboutData[index].info.map((item) => (
+            {currentData.map((aboutItem) => (
               <div
-                key={item.id}
+                key={aboutItem.id}
                 className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
               >
                 {/* title */}
                 <div className='font-light mb-2 md:mb-0'>
-                  {item.url ? (
-                    <Link href={item.url} rel='noopener noreferrer' target='_blank'>
-                      <span className='text-decoration-line: underline hover:text-accent transition-all duration-300'>
-                        {item.title} - {item.stage}
-                      </span>
-                    </Link>
-                  ) : (
-                    <span>
-                      {item.title} - {item.stage}
-                    </span>
-                  )}
+                  <span>
+                    {aboutItem.title} - {aboutItem.period}
+                  </span>
                   <br />
-                  <span>{item.school}</span>
+                  <span>{aboutItem.schoolName}</span>
                 </div>
+                {/* icons */}
                 <div className='flex gap-x-4'>
-                  {/* icons */}
-                  {item.icons?.map((icon) => (
+                  {aboutItem.icons?.map((icon) => (
                     <div key={icon.id} className='text-2xl text-white'>
                       {icon.icon}
                     </div>

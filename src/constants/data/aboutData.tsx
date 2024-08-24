@@ -17,124 +17,121 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
-type AboutDataType = {
+type Tabs = {
+  id: number;
+  name: 'skills' | 'experience' | 'education' | 'awards';
+};
+
+type AboutItme = {
   id: number;
   title: string;
-  info: {
+  icons?: {
     id: number;
-    title: string;
-    school?: string;
-    where?: string;
-    icons?: {
-      id: number;
-      icon: JSX.Element;
-    }[];
-    stage?: string;
-    url?: string;
+    icon: JSX.Element;
   }[];
+  schoolName?: string;
+  period?: string;
 };
-export const aboutData: AboutDataType[] = [
-  {
-    id: 0,
-    title: 'skills',
-    info: [
-      {
-        id: 0,
-        title: 'Languages',
-        icons: [
-          { id: 1, icon: <SiJavascript /> },
-          { id: 2, icon: <SiTypescript /> },
-          { id: 3, icon: <FaHtml5 /> },
-          { id: 4, icon: <FaCss3 /> },
-          { id: 5, icon: <SiSass /> },
-        ],
-      },
-      {
-        id: 1,
-        title: 'Frameworks & Libraries',
-        icons: [
-          { id: 1, icon: <FaReact /> },
-          { id: 2, icon: <SiNextdotjs /> },
-          { id: 3, icon: <SiNodedotjs /> },
-          { id: 4, icon: <SiExpress /> },
-          { id: 5, icon: <SiPrisma /> },
-          { id: 6, icon: <SiPlaywright /> },
-          { id: 7, icon: <SiJest /> },
-          { id: 8, icon: <SiTailwindcss /> },
-        ],
-      },
-      {
-        id: 2,
-        title: 'Database & Infrastructure',
-        icons: [
-          { id: 1, icon: <SiPostgresql /> },
-          { id: 2, icon: <SiAmazondynamodb /> },
-          { id: 3, icon: <SiDocker /> },
-          { id: 4, icon: <SiAmazonaws /> },
-          { id: 5, icon: <SiTerraform /> },
-        ],
-      },
-    ],
-  },
-  {
-    id: 1,
-    title: 'experience',
-    info: [
-      {
-        id: 0,
-        title: 'Frontend Developer - WiseVine - Japan',
-        stage: 'Jun,2024 - Present',
-      },
-      {
-        id: 1,
-        title: 'Freelance Developer',
-        stage: 'Dec,2023 - Jun,2024',
-      },
-      {
-        id: 2,
-        title: 'Fullstack Developer - Tellext - Canada',
-        stage: 'Feb,2023 - Nov,2023',
-      },
-      {
-        id: 3,
-        title: 'Freelance Developer',
-        stage: 'Jun,2021 - Aug,2023',
-      },
-      {
-        id: 4,
-        title: 'Lead Associate Developer & Admin - Anycarry - Japan',
-        stage: 'Jan,2020 - May,2021',
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: 'Education',
-    info: [
-      {
-        id: 0,
-        title: 'Web & Mobile Application Development',
-        school: 'Cornerstone International Community College of Canada - Canada',
-        stage: 'Dec,2023',
-      },
-      {
-        id: 1,
-        title: 'Bachelor of Law',
-        school: 'Nihon University - Japan',
-        stage: 'Mar,2018',
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: 'awards',
-    info: [
-      {
-        id: 0,
-        title: 'Award of NoCode Japan in NoCode Click Hackathon',
-        stage: 'May,2021',
-        // url: 'https://nocodejapan.org/media/click-hackathon-result-01/#NoCode_Japan_shangRestarea_jiu_jing_huang_guisan',
-      },
-    ],
-  },
+
+export type AboutData = {
+  skills: AboutItme[];
+  experience: AboutItme[];
+  education: AboutItme[];
+  awards: AboutItme[];
+};
+
+export const aboutTabs: Tabs[] = [
+  { id: 0, name: 'skills' },
+  { id: 1, name: 'experience' },
+  { id: 2, name: 'education' },
+  { id: 3, name: 'awards' },
 ];
+
+export const aboutData: AboutData = {
+  skills: [
+    {
+      id: 0,
+      title: 'Languages',
+      icons: [
+        { id: 0, icon: <SiJavascript /> },
+        { id: 1, icon: <SiTypescript /> },
+        { id: 2, icon: <FaHtml5 /> },
+        { id: 3, icon: <FaCss3 /> },
+        { id: 4, icon: <SiSass /> },
+      ],
+    },
+    {
+      id: 1,
+      title: 'Frameworks & Libraries',
+      icons: [
+        { id: 0, icon: <FaReact /> },
+        { id: 1, icon: <SiNextdotjs /> },
+        { id: 2, icon: <SiNodedotjs /> },
+        { id: 3, icon: <SiExpress /> },
+        { id: 4, icon: <SiPrisma /> },
+        { id: 5, icon: <SiPlaywright /> },
+        { id: 6, icon: <SiJest /> },
+        { id: 7, icon: <SiTailwindcss /> },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Database & Infrastructure',
+      icons: [
+        { id: 0, icon: <SiPostgresql /> },
+        { id: 1, icon: <SiAmazondynamodb /> },
+        { id: 2, icon: <SiDocker /> },
+        { id: 3, icon: <SiAmazonaws /> },
+        { id: 4, icon: <SiTerraform /> },
+      ],
+    },
+  ],
+  experience: [
+    {
+      id: 0,
+      title: 'Frontend Developer - WiseVine - Japan',
+      period: 'Jun,2024 - Present',
+    },
+    {
+      id: 1,
+      title: 'Freelance Developer',
+      period: 'Dec,2023 - Jun,2024',
+    },
+    {
+      id: 2,
+      title: 'Fullstack Developer - Tellext - Canada',
+      period: 'Feb,2023 - Nov,2023',
+    },
+    {
+      id: 3,
+      title: 'Freelance Developer',
+      period: 'Jun,2021 - Aug,2023',
+    },
+    {
+      id: 4,
+      title: 'Lead Associate Developer & Admin - Anycarry - Japan',
+      period: 'Jan,2020 - May,2021',
+    },
+  ],
+  education: [
+    {
+      id: 0,
+      title: 'Web & Mobile Application Development',
+      schoolName: 'Cornerstone International Community College of Canada - Canada',
+      period: 'Dec,2023',
+    },
+    {
+      id: 1,
+      title: 'Bachelor of Law',
+      schoolName: 'Nihon University - Japan',
+      period: 'Mar,2018',
+    },
+  ],
+  awards: [
+    {
+      id: 0,
+      title: 'Award of NoCode Japan in NoCode Click Hackathon',
+      period: 'May,2021',
+    },
+  ],
+};
