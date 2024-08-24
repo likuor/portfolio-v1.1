@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const validationSchema = z.object({
+export const contactSchema = z.object({
   name: z.string().min(2, 'Over 2 letters of your name is required'),
   email: z.string().min(1).email('Email is not proper'),
   subject: z

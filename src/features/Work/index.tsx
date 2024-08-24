@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 import Circle from '@/components/decoration/circle';
-import Fire from '@/components/decoration/fire';
-import WorkSlider from '@/components/slider';
 import { fadeIn } from '@/constants/motion/variants';
+import WorkSlider from '@/features/Work/_components/WorkSlider';
+import Fire from '@/features/Work/_components/fire';
 
 const Work = () => (
   <div className='h-full bg-primary/30 py-36 flex items-center'>
