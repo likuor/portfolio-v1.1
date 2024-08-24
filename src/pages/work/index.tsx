@@ -1,4 +1,4 @@
-import Work from '../../components/pages/Work';
+import Work from '../../components/features/Work';
 
 const index = () => (
   <>

@@ -1,4 +1,4 @@
-import Contact from '../../components/pages/Contact';
+import Contact from '../../components/features/Contact';
 
 const index = () => (
   <>

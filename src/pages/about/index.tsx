@@ -1,4 +1,4 @@
-import About from '../../components/pages/About';
+import About from '../../components/features/About';
 
 const index = () => <About />;
 
