@@ -19,7 +19,7 @@ import {
 
 type Tabs = {
   id: number;
-  title: 'skills' | 'experience' | 'education' | 'awards';
+  name: 'skills' | 'experience' | 'education' | 'awards';
 };
 
 type AboutItme = {
@@ -41,10 +41,10 @@ export type AboutData = {
 };
 
 export const aboutTabs: Tabs[] = [
-  { id: 0, title: 'skills' },
-  { id: 1, title: 'experience' },
-  { id: 2, title: 'education' },
-  { id: 3, title: 'awards' },
+  { id: 0, name: 'skills' },
+  { id: 1, name: 'experience' },
+  { id: 2, name: 'education' },
+  { id: 3, name: 'awards' },
 ];
 
 export const aboutData: AboutData = {

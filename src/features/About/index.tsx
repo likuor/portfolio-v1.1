@@ -102,19 +102,19 @@ const About = () => {
                 role='button'
                 tabIndex={0}
                 className={`${
-                  selectedTab === tab.title &&
+                  selectedTab === tab.name &&
                   'text-sub after:w-[100%] after:bg-sub after:transition-all after:duration-300'
                 }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => {
-                  handleClick(tab.title);
+                  handleClick(tab.name);
                 }}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
-                    handleClick(tab.title);
+                    handleClick(tab.name);
                   }
                 }}
               >
-                {tab.title}
+                {tab.name}
               </div>
             ))}
           </div>
