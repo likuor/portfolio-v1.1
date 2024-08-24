@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import navBarData from '@/constants/data/navBarData';
+import { navBarData } from '@/constants/data/NavBarData';
 
 import NavbarController from './controller';
 
