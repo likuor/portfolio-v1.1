@@ -23,7 +23,6 @@ type Tabs = {
 };
 
 type AboutDataType = {
-  id: number;
   info: {
     id: number;
     title: string;
@@ -45,7 +44,6 @@ export const aboutTabs: Tabs[] = [
 
 export const aboutData: AboutDataType[] = [
   {
-    id: 0,
     info: [
       {
         id: 0,
@@ -86,7 +84,6 @@ export const aboutData: AboutDataType[] = [
     ],
   },
   {
-    id: 1,
     info: [
       {
         id: 0,
@@ -116,7 +113,6 @@ export const aboutData: AboutDataType[] = [
     ],
   },
   {
-    id: 2,
     info: [
       {
         id: 0,
@@ -133,7 +129,6 @@ export const aboutData: AboutDataType[] = [
     ],
   },
   {
-    id: 3,
     info: [
       {
         id: 0,
