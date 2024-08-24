@@ -1,6 +1,6 @@
 import { HiHome, HiUser, HiViewColumns, HiEnvelope } from 'react-icons/hi2';
 
-const NavBarData = [
+const navBarData = [
   { id: 1, name: 'home', path: '/', icon: <HiHome /> },
   { id: 2, name: 'about', path: '/about', icon: <HiUser /> },
   { id: 3, name: 'work', path: '/work', icon: <HiViewColumns /> },
@@ -12,4 +12,4 @@ const NavBarData = [
   },
 ];
 
-export default NavBarData;
+export default navBarData;
