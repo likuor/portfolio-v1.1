@@ -9,7 +9,7 @@ import Avatar from '@/features/About/_components/avatar';
 import AboutController from './controller';
 
 const About = () => {
-  const { tabIndex, setTabIndex, yearsDevExperience, currentData } = AboutController();
+  const { selectedTab, yearsDevExperience, currentData, handleClick } = AboutController();
 
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -102,13 +102,15 @@ const About = () => {
                 role='button'
                 tabIndex={0}
                 className={`${
-                  tabIndex === tab.title &&
+                  selectedTab === tab.title &&
                   'text-sub after:w-[100%] after:bg-sub after:transition-all after:duration-300'
                 }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                onClick={() => setTabIndex(tab.title)}
+                onClick={() => {
+                  handleClick(tab.title);
+                }}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
-                    setTabIndex(tab.title);
+                    handleClick(tab.title);
                   }
                 }}
               >
