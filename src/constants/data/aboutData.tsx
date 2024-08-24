@@ -17,25 +17,23 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
+type Tabs = {
+  id: number;
+  title: 'skills' | 'experience' | 'education' | 'awards';
+};
+
 type AboutDataType = {
   id: number;
   info: {
     id: number;
     title: string;
-    school?: string;
-    where?: string;
+    schoolName?: string;
     icons?: {
       id: number;
       icon: JSX.Element;
     }[];
-    stage?: string;
-    url?: string;
+    period?: string;
   }[];
-};
-
-type Tabs = {
-  id: number;
-  title: 'skills' | 'experience' | 'education' | 'awards';
 };
 
 export const aboutTabs: Tabs[] = [
@@ -93,27 +91,27 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Frontend Developer - WiseVine - Japan',
-        stage: 'Jun,2024 - Present',
+        period: 'Jun,2024 - Present',
       },
       {
         id: 1,
         title: 'Freelance Developer',
-        stage: 'Dec,2023 - Jun,2024',
+        period: 'Dec,2023 - Jun,2024',
       },
       {
         id: 2,
         title: 'Fullstack Developer - Tellext - Canada',
-        stage: 'Feb,2023 - Nov,2023',
+        period: 'Feb,2023 - Nov,2023',
       },
       {
         id: 3,
         title: 'Freelance Developer',
-        stage: 'Jun,2021 - Aug,2023',
+        period: 'Jun,2021 - Aug,2023',
       },
       {
         id: 4,
         title: 'Lead Associate Developer & Admin - Anycarry - Japan',
-        stage: 'Jan,2020 - May,2021',
+        period: 'Jan,2020 - May,2021',
       },
     ],
   },
@@ -123,14 +121,14 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Web & Mobile Application Development',
-        school: 'Cornerstone International Community College of Canada - Canada',
-        stage: 'Dec,2023',
+        schoolName: 'Cornerstone International Community College of Canada - Canada',
+        period: 'Dec,2023',
       },
       {
         id: 1,
         title: 'Bachelor of Law',
-        school: 'Nihon University - Japan',
-        stage: 'Mar,2018',
+        schoolName: 'Nihon University - Japan',
+        period: 'Mar,2018',
       },
     ],
   },
@@ -140,8 +138,7 @@ export const aboutData: AboutDataType[] = [
       {
         id: 0,
         title: 'Award of NoCode Japan in NoCode Click Hackathon',
-        stage: 'May,2021',
-        // url: 'https://nocodejapan.org/media/click-hackathon-result-01/#NoCode_Japan_shangRestarea_jiu_jing_huang_guisan',
+        period: 'May,2021',
       },
     ],
   },
