@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import CountUp from 'react-countup';
 
-import Avatar from '@/components/decoration/avatar';
 import Circle from '@/components/decoration/circle';
+import Avatar from '@/components/pages/About/_components/avatar';
 import { aboutData } from '@/constants/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
 
