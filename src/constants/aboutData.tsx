@@ -82,21 +82,26 @@ export const aboutData: AboutDataType[] = [
     info: [
       {
         id: 0,
-        title: 'Freelance Developer',
-        stage: 'Dec,2023 - Present',
+        title: 'Frontend Developer - WiseVine - Japan',
+        stage: 'Jun,2024 - Present',
       },
       {
         id: 1,
+        title: 'Freelance Developer',
+        stage: 'Dec,2023 - Jun,2024',
+      },
+      {
+        id: 2,
         title: 'Fullstack Developer - Tellext - Canada',
         stage: 'Feb,2023 - Nov,2023',
       },
       {
-        id: 2,
+        id: 3,
         title: 'Freelance Developer',
         stage: 'Jun,2021 - Aug,2023',
       },
       {
-        id: 3,
+        id: 4,
         title: 'Lead Associate Developer & Admin - Anycarry - Japan',
         stage: 'Jan,2020 - May,2021',
       },
