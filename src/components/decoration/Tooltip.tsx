@@ -9,11 +9,11 @@ const Tooltip = ({ language, children }: Props) => (
       className={[
         'whitespace-nowrap',
         'rounded',
-        'bg-black',
+        'bg-sub',
         'text-xs',
         'px-2',
         'py-1',
-        'text-white',
+        'text-secondary',
         'absolute',
         '-top-8',
         'left-1/2',
@@ -25,7 +25,7 @@ const Tooltip = ({ language, children }: Props) => (
         'before:top-full',
         'before:border-4',
         'before:border-transparent',
-        'before:border-t-black',
+        'before:border-t-sub',
         'opacity-0',
         'group-hover:opacity-100',
         'transition',
@@ -34,7 +34,7 @@ const Tooltip = ({ language, children }: Props) => (
     >
       {language}
     </span>
-    <span className='transition hover:text-accent'>{children}</span>
+    <span className='transition hover:text-sub'>{children}</span>
   </span>
 );
 
