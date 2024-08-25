@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
-import Circle from '@/components/decoration/circle';
+import Circle from '@/components/decoration/Circle';
 import { aboutTabs } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
 import Avatar from '@/features/About/_components/avatar';
@@ -34,7 +34,6 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            {/* Passionately developing <span className='text-accent'>creative</span> apps. */}
             Let me <span className='text-accent'>solve</span> problems
           </motion.h2>
           <motion.p
