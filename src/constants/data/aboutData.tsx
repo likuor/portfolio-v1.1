@@ -17,6 +17,8 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
+import Tooltip from '@/components/decoration/Tooltip';
+
 type Tabs = {
   id: number;
   name: 'skills' | 'experience' | 'education' | 'awards';
@@ -53,36 +55,162 @@ export const aboutData: AboutData = {
       id: 0,
       title: 'Languages',
       icons: [
-        { id: 0, icon: <SiJavascript /> },
-        { id: 1, icon: <SiTypescript /> },
-        { id: 2, icon: <FaHtml5 /> },
-        { id: 3, icon: <FaCss3 /> },
-        { id: 4, icon: <SiSass /> },
+        {
+          id: 0,
+          icon: (
+            <Tooltip language='Javascript'>
+              <SiJavascript />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 1,
+          icon: (
+            <Tooltip language='Typescript'>
+              <SiTypescript />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 2,
+          icon: (
+            <Tooltip language='HTML'>
+              <FaHtml5 />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 3,
+          icon: (
+            <Tooltip language='CSS'>
+              <FaCss3 />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 4,
+          icon: (
+            <Tooltip language='SCSS/Sass'>
+              <SiSass />
+            </Tooltip>
+          ),
+        },
       ],
     },
     {
       id: 1,
       title: 'Frameworks & Libraries',
       icons: [
-        { id: 0, icon: <FaReact /> },
-        { id: 1, icon: <SiNextdotjs /> },
-        { id: 2, icon: <SiNodedotjs /> },
-        { id: 3, icon: <SiExpress /> },
-        { id: 4, icon: <SiPrisma /> },
-        { id: 5, icon: <SiPlaywright /> },
-        { id: 6, icon: <SiJest /> },
-        { id: 7, icon: <SiTailwindcss /> },
+        {
+          id: 0,
+          icon: (
+            <Tooltip language='React'>
+              <FaReact />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 1,
+          icon: (
+            <Tooltip language='Next.js'>
+              <SiNextdotjs />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 2,
+          icon: (
+            <Tooltip language='Node.js'>
+              <SiNodedotjs />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 3,
+          icon: (
+            <Tooltip language='Express'>
+              <SiExpress />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 4,
+          icon: (
+            <Tooltip language='Prisma'>
+              <SiPrisma />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 5,
+          icon: (
+            <Tooltip language='Playwright'>
+              <SiPlaywright />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 6,
+          icon: (
+            <Tooltip language='Jest'>
+              <SiJest />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 7,
+          icon: (
+            <Tooltip language='Tailwindcss'>
+              <SiTailwindcss />
+            </Tooltip>
+          ),
+        },
       ],
     },
     {
       id: 2,
       title: 'Database & Infrastructure',
       icons: [
-        { id: 0, icon: <SiPostgresql /> },
-        { id: 1, icon: <SiAmazondynamodb /> },
-        { id: 2, icon: <SiDocker /> },
-        { id: 3, icon: <SiAmazonaws /> },
-        { id: 4, icon: <SiTerraform /> },
+        {
+          id: 0,
+          icon: (
+            <Tooltip language='Postgresql'>
+              <SiPostgresql />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 1,
+          icon: (
+            <Tooltip language='Amazon DynamoDB'>
+              <SiAmazondynamodb />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 2,
+          icon: (
+            <Tooltip language='Docker'>
+              <SiDocker />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 3,
+          icon: (
+            <Tooltip language='Lambda, IoT core, SES'>
+              <SiAmazonaws />
+            </Tooltip>
+          ),
+        },
+        {
+          id: 4,
+          icon: (
+            <Tooltip language='Terraform'>
+              <SiTerraform />
+            </Tooltip>
+          ),
+        },
       ],
     },
   ],
