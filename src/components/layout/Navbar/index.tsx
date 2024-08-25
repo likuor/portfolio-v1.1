@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { navBarData } from '@/constants/data/NavBarData';
+import { NavBarData } from '@/constants/data/NavBarData';
 
 import NavbarController from './controller';
 
@@ -14,7 +14,7 @@ const Navbar = () => {
         className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[60px] xl:h-max py-8 bg-white/10
       backdrop-blur-sm text-2xl xl:text-xl xl:rounded-full'
       >
-        {navBarData.map((link) => (
+        {NavBarData.map((link) => (
           <Link
             className={`${
               link.path === pathname && 'text-accent'
