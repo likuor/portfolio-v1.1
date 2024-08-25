@@ -4,7 +4,7 @@ import Circle from '@/components/decoration/Circle';
 import { fadeIn } from '@/constants/motion/variants';
 import WorkSlider from '@/features/Work/_components/WorkSlider';
 
-import Fire from './_components/fire';
+import Fire from './_components/Fire';
 
 const Work = () => (
   <div className='h-full bg-primary/30 py-36 flex items-center'>
