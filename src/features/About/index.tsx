@@ -4,8 +4,8 @@ import CountUp from 'react-countup';
 import Circle from '@/components/decoration/Circle';
 import { aboutTabs } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
-import Avatar from '@/features/About/_components/avatar';
 
+import Avatar from './_components/avatar';
 import AboutController from './controller';
 
 const About = () => {
