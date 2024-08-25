@@ -34,7 +34,6 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            {/* Passionately developing <span className='text-accent'>creative</span> apps. */}
             Let me <span className='text-accent'>solve</span> problems
           </motion.h2>
           <motion.p
