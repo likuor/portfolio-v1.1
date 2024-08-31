@@ -1,8 +1,9 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname } from 'next/navigation';
 
 const NavbarController = () => {
-  const router = useRouter();
-  const { pathname } = router;
+  const pathname = usePathname;
 
   return { pathname };
 };
