@@ -1,6 +1,8 @@
+'use client';
+
 import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useRouter } from 'next/router';
+import { usePathname, useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 
 import { contactSchema } from '@/features/Contact/schema/contactSchema';
@@ -14,6 +16,7 @@ export type FormProps = {
 
 const ContactController = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const {
     register,
@@ -30,7 +33,7 @@ const ContactController = () => {
         `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
       );
       if (result.status !== 200) return { data: 'something wrong' };
-      return router.reload();
+      return router.push(`${pathname}`);
     } catch (error) {
       return error;
     }
