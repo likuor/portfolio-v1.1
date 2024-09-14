@@ -21,7 +21,7 @@ const RootLayout = ({
   return (
     <html lang={lang} dir={dir(lang)}>
       <body>
-        <Layout>{children}</Layout>
+        <Layout lang={lang}>{children}</Layout>
       </body>
     </html>
   );
