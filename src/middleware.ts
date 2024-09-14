@@ -8,7 +8,7 @@ const getNegotiatedLanguage = (headers: Negotiator.Headers): string | undefined 
 
 export const config = {
   // https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
-  matcher: ['/((?!api|_next/static|_next/image|.*\\.png$)$|public/.*)'],
+  matcher: ['/((?!api|_next/static|_next/image|icons|images|favicon.ico).*)'],
 };
 
 export const middleware = (request: NextRequest) => {
