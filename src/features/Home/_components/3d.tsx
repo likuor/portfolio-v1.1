@@ -2,6 +2,7 @@ import { OrbitControls, Text } from '@react-three/drei';
 import { Canvas, useThree, useFrame } from '@react-three/fiber';
 import { useRef, FC } from 'react';
 
+// TODO Add useTranslation hook
 const RenderKonnichiwa = () => {
   const { viewport } = useThree();
   const ref = useRef<any>();

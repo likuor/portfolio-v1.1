@@ -4,12 +4,18 @@ import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
+import { useTranslation } from '@/constants/i18n/client';
 import { fadeIn } from '@/constants/motion/variants';
 
 import ContactController from './controller';
 
-const Contact = () => {
+type Props = {
+  lang: string;
+};
+
+const Contact = ({ lang }: Props) => {
   const { register, handleSubmit, errors, onSubmit } = ContactController();
+  const { t } = useTranslation(lang);
 
   return (
     <div className='h-full bg-primary/30'>
@@ -22,7 +28,8 @@ const Contact = () => {
             exit='hidden'
             className='h2 text-center mb-4'
           >
-            Get in Touch<span className='text-accent'>.</span>
+            {t('contact.titlePrimary')}
+            <span className='text-accent'>{t('contact.titleAccent')}</span>
           </motion.h2>
 
           {/* form */}

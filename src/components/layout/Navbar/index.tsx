@@ -5,9 +5,12 @@ import { usePathname } from 'next/navigation';
 
 import { NavBarData } from '@/constants/data/NavBarData';
 
-const Navbar = () => {
-  const pathname = usePathname();
+type Props = {
+  lang: string;
+};
 
+const Navbar = ({ lang }: Props) => {
+  const pathname = usePathname();
   return (
     <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
       {/* inner */}
@@ -20,7 +23,7 @@ const Navbar = () => {
             className={`${
               link.path === pathname && 'text-accent'
             } relative flex items-center group hover:text-accent transition-all duration-300`}
-            href={link.path}
+            href={`/${lang}${link.path}`}
             key={link.id}
           >
             {/* tooltip */}

@@ -1,0 +1,30 @@
+{
+  "home": {
+    "titlePrimary": "From Ideas",
+    "titleAccent": "to Codes",
+    "subTitle": "Full-stack developer with {{experience}}+ years of experience in advanced web technologies.\nSpecializing in Javascript/Typescript, Next.js, React, Node.js, AWS, and building apps\nof AI robots, EC websites."
+  },
+  "about": {
+    "titlePrimary": "Let me\n",
+    "titleAccent": "solve\n",
+    "titlePrimaryLast": "problems",
+    "subTitle": "As a developer passionate about creating custom-built software, I prioritize\nfunctionality and convenience. I take pride in building solutions that help people in\ntheir daily lives.",
+    "experience": "Years of experience",
+    "clients": "Satisfied clients",
+    "projects": "Finished projects",
+    "tabs": {
+      "skills": "Skills",
+      "experience": "Experience",
+      "education": "Education"
+    }
+  },
+  "work": {
+    "titlePrimary": "My work",
+    "titleAccent": "\n.",
+    "subTitle": "Client works as a freelance and also group/private works when I was a student are\nready to see."
+  },
+  "contact": {
+    "titlePrimary": "Get in Touch",
+    "titleAccent": "\n."
+  }
+}
