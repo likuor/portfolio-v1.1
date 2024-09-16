@@ -7,6 +7,8 @@ import { fadeIn } from '@/constants/motion/variants';
 import Hero3D from '@/features/Home/_components/3d';
 import ParticlesContainer from '@/features/Home/_components/Particles';
 import ProjectButton from '@/features/Home/_components/ProjectButton';
+import yearsSinceDate from '@/utils/timeCount';
+import { DEVELOPER_EXPERIENCE_FROM } from '@/constants/data';
 
 type Props = {
   lang: string;
@@ -14,6 +16,11 @@ type Props = {
 
 const Home = ({ lang }: Props) => {
   const { t } = useTranslation(lang);
+  const yearsDevExperience = yearsSinceDate(
+    DEVELOPER_EXPERIENCE_FROM.year,
+    DEVELOPER_EXPERIENCE_FROM.month,
+    DEVELOPER_EXPERIENCE_FROM.day
+  );
 
   return (
     <div className='bg-primary/20 h-full'>
@@ -42,7 +49,7 @@ const Home = ({ lang }: Props) => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-            {t('home.subTitle')}
+            {t('home.subTitle', { experience: yearsDevExperience })}
           </motion.p>
           {/* button */}
           <div className='flex justify-center xl:hidden relative'>

@@ -1,9 +1,8 @@
 {
-  "app_name": "Next.js App Router i18n demo",
   "home": {
     "titlePrimary": "From Ideas",
     "titleAccent": "to Codes",
-    "subTitle": "Full-stack developer with 2+ years of experience in advanced web technologies.\nSpecializing in Javascript/Typescript, Next.js, React, Node.js, AWS, and building apps\nof AI robots, EC websites."
+    "subTitle": "Full-stack developer with {{experience}}+ years of experience in advanced web technologies.\nSpecializing in Javascript/Typescript, Next.js, React, Node.js, AWS, and building apps\nof AI robots, EC websites."
   },
   "about": {
     "titlePrimary": "Let me\n",
