@@ -18,5 +18,10 @@
       "experience": "Experience",
       "education": "Education"
     }
+  },
+  "work": {
+    "titlePrimary": "My work",
+    "titleAccent": "\n.",
+    "subTitle": "Client works as a freelance and also group/private works when I was a student are\nready to see."
   }
 }
