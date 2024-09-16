@@ -5,13 +5,19 @@ import CountUp from 'react-countup';
 
 import Circle from '@/components/decoration/Circle';
 import { aboutTabs } from '@/constants/data/aboutData';
+import { useTranslation } from '@/constants/i18n/client';
 import { fadeIn } from '@/constants/motion/variants';
 
 import Avatar from './_components/Avatar';
 import AboutController from './controller';
 
-const About = () => {
+type Props = {
+  lang: string;
+};
+
+const About = ({ lang }: Props) => {
   const { selectedTab, yearsDevExperience, currentData, handleClick } = AboutController();
+  const { t } = useTranslation(lang);
 
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -36,7 +42,9 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Let me <span className='text-accent'>solve</span> problems
+            {t('about.titlePrimary')}
+            <span className='text-accent'>{t('about.titleAccent')}</span>
+            {t('about.titlePrimaryLast')}
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -45,9 +53,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            As a developer passionate about creating custom-built software, I prioritize
-            functionality and convenience. I take pride in building solutions that help people in
-            their daily lives.
+            {t('about.subTitle')}
           </motion.p>
           <motion.div
             variants={fadeIn('right', 0.6)}
@@ -63,7 +69,7 @@ const About = () => {
                   <CountUp start={0} end={yearsDevExperience} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Years of experience
+                  {t('about.experience')}
                 </div>
               </div>
               {/* clients */}
@@ -72,7 +78,7 @@ const About = () => {
                   <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
+                  {t('about.clients')}
                 </div>
               </div>
               {/* projects */}
@@ -81,7 +87,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
+                  {t('about.projects')}
                 </div>
               </div>
             </div>
