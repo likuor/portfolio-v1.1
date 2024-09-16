@@ -2,13 +2,13 @@
 
 import { motion } from 'framer-motion';
 
+import { DEVELOPER_EXPERIENCE_FROM } from '@/constants/data';
 import { useTranslation } from '@/constants/i18n/client';
 import { fadeIn } from '@/constants/motion/variants';
 import Hero3D from '@/features/Home/_components/3d';
 import ParticlesContainer from '@/features/Home/_components/Particles';
 import ProjectButton from '@/features/Home/_components/ProjectButton';
 import yearsSinceDate from '@/utils/timeCount';
-import { DEVELOPER_EXPERIENCE_FROM } from '@/constants/data';
 
 type Props = {
   lang: string;
