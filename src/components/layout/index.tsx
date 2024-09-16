@@ -6,16 +6,17 @@ import Header from './Header';
 import Navbar from './Navbar';
 import TopImg from './TopImage';
 
-export type LayoutProps = {
+export type Props = {
+  lang: string;
   children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({ lang, children }: Props) => (
   <div
     className={`page bg-bgLayout text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
   >
     <TopImg />
-    <Navbar />
+    <Navbar lang={lang} />
     <Header />
     {children}
   </div>
