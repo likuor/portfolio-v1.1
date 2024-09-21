@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useMemo } from 'react';
 import { HiEnvelope, HiHome, HiUser, HiViewColumns } from 'react-icons/hi2';
 
 import { PAGES } from '@/constants';
@@ -12,17 +13,20 @@ type Props = {
 
 const Navbar = ({ lang }: Props) => {
   const pathname = usePathname();
-  const navBarMenu = [
-    { id: 1, name: 'Home', path: PAGES.HOME, icon: <HiHome /> },
-    { id: 2, name: 'About', path: PAGES.ABOUT, icon: <HiUser /> },
-    { id: 3, name: 'Work', path: PAGES.WORK, icon: <HiViewColumns /> },
-    {
-      id: 4,
-      name: 'Contact',
-      path: PAGES.CONTACT,
-      icon: <HiEnvelope />,
-    },
-  ];
+  const navBarMenu = useMemo(
+    () => [
+      { id: 1, name: 'Home', path: PAGES.HOME, icon: <HiHome /> },
+      { id: 2, name: 'About', path: PAGES.ABOUT, icon: <HiUser /> },
+      { id: 3, name: 'Work', path: PAGES.WORK, icon: <HiViewColumns /> },
+      {
+        id: 4,
+        name: 'Contact',
+        path: PAGES.CONTACT,
+        icon: <HiEnvelope />,
+      },
+    ],
+    []
+  );
 
   return (
     <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
