@@ -4,12 +4,12 @@ import { initReactI18next } from 'react-i18next/initReactI18next';
 
 import { i18nConfig } from './settings';
 
-export default async function initTranslations(
+export const initTranslations = async (
   locale: string,
   namespaces: string[],
   i18nInstance?: i18next,
   resources?: Resource
-) {
+) => {
   const instance = i18nInstance || createInstance();
 
   instance.use(initReactI18next);
@@ -38,4 +38,6 @@ export default async function initTranslations(
     resources: instance.services.resourceStore.data,
     t: instance.t,
   };
-}
+};
+
+export default initTranslations;

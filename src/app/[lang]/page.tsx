@@ -1,5 +1,5 @@
 import { TranslationsProvider } from '@/components/provider/TranslationsProvider';
-import initTranslations from '@/constants/i18n/i18n';
+import { initTranslations } from '@/constants/i18n/i18n';
 
 import Home from '../../features/Home';
 

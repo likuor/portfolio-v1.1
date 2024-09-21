@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 import Layout from '@/components/layout';
 import { TranslationsProvider } from '@/components/provider/TranslationsProvider';
 import '@/styles/globals.css';
-import initTranslations from '@/constants/i18n/i18n';
+import { initTranslations } from '@/constants/i18n/i18n';
 
 export const metadata: Metadata = {
   title: 'Home',
