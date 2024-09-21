@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 
 import { contactSchema } from '@/features/Contact/schema/contactSchema';
 
-export type FormProps = {
+export type Props = {
   name: string;
   email: string;
   subject: string;
@@ -22,9 +22,9 @@ const ContactController = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormProps>({ mode: 'onChange', resolver: zodResolver(contactSchema) });
+  } = useForm<Props>({ mode: 'onChange', resolver: zodResolver(contactSchema) });
 
-  const onSubmit = async (data: FormProps) => {
+  const onSubmit = async (data: Props) => {
     try {
       const result = await emailjs.send(
         `${process.env.NEXT_PUBLIC_SERVICE_ID}`,

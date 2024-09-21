@@ -4,7 +4,7 @@ import { createInstance, Resource } from 'i18next';
 import { ReactNode } from 'react';
 import { I18nextProvider } from 'react-i18next';
 
-import { initTranslations } from '@/constants/i18n/i18n';
+import { initTranslations } from '@/constants/i18n/settings';
 
 type Props = {
   resources: Resource;
