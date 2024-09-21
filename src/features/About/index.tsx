@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
+import { useTranslation } from 'react-i18next';
 
 import Circle from '@/components/decoration/Circle';
 import { aboutTabs } from '@/constants/data/aboutData';
-import { useTranslation } from 'react-i18next';
 import { fadeIn } from '@/constants/motion/variants';
 
 import Avatar from './_components/Avatar';

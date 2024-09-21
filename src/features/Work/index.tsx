@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import Circle from '@/components/decoration/Circle';
-import { useTranslation } from 'react-i18next';
 import { fadeIn } from '@/constants/motion/variants';
 import WorkSlider from '@/features/Work/_components/WorkSlider';
 
