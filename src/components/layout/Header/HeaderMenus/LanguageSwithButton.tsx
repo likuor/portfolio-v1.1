@@ -22,7 +22,12 @@ const LanguageSwithButton = () => {
   };
 
   return (
-    <button type='button' onClick={onClickToggleLanguage} aria-label='Switch language'>
+    <button
+      type='button'
+      onClick={onClickToggleLanguage}
+      aria-label='Switch language'
+      className='hover:text-accent transition-all duration-300'
+    >
       <IoLanguage />
     </button>
   );
