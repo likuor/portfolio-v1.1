@@ -7,3 +7,10 @@ export const DEVELOPER_EXPERIENCE_FROM = {
 export const SEARCH_PARAMS = {
   TAB: 'tab',
 };
+
+export const PAGES = {
+  HOME: '/',
+  ABOUT: '/about',
+  WORK: '/work',
+  CONTACT: '/contact',
+};

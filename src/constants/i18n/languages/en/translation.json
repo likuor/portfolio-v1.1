@@ -1,4 +1,9 @@
 {
+  "common": {
+    "error": {
+      "noData": "There is no data"
+    }
+  },
   "home": {
     "titlePrimary": "From Ideas",
     "titleAccent": "to Codes",
@@ -13,9 +18,58 @@
     "clients": "Satisfied clients",
     "projects": "Finished projects",
     "tabs": {
-      "skills": "Skills",
-      "experience": "Experience",
-      "education": "Education"
+      "skills": {
+        "languages": "Languages",
+        "frameworksAndLibraries": "Frameworks & Libraries",
+        "databaseAndInfrastructure": "Database & Infrastructure"
+      },
+      "experience": {
+        "AnyCarry": {
+          "name": "AnyCarry",
+          "role": "Lead Associate Developer",
+          "period": "Jan,2020 - May,2021",
+          "location": "Japan"
+        },
+        "Tellext": {
+          "name": "Tellext",
+          "role": "Fullstack Developer",
+          "period": "Feb,2023 - Nov,2023",
+          "location": "Canada"
+        },
+        "Freelance": {
+          "name": "Freelance",
+          "role": "Frontend Developer",
+          "period": "Jun,2021 - Jun,2024",
+          "location": "Canada"
+        },
+        "WiseVine": {
+          "name": "WiseVine",
+          "role": "Frontend Developer",
+          "period": "Jun,2024 - Present",
+          "location": "Japan"
+        }
+      },
+      "education": {
+        "NihonUniversity": {
+          "name": "Nihon University",
+          "degree": "Bachelor of Law",
+          "graduatedDate": "Mar,2018",
+          "location": "Japan"
+        },
+        "CICCC": {
+          "name": "Cornerstone International Community College of Canada",
+          "degree": "Web & Mobile Application Development",
+          "graduatedDate": "Dec,2022",
+          "location": "Canada"
+        }
+      },
+      "awards": {
+        "Click": {
+          "title": "Award of NoCode Japan in NoCode Click Hackathon",
+          "date": "May,2021",
+          "location": "Japan"
+        }
+      }
     }
   },
   "work": {
