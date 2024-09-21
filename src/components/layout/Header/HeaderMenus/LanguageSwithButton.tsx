@@ -4,7 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { IoLanguage } from 'react-icons/io5';
 
-import { i18nConfig } from '@/constants/i18n/settings';
+import { defaultLanguage, i18nConfig } from '@/constants/i18n/settings';
 
 const LanguageSwithButton = () => {
   const { i18n } = useTranslation();
@@ -12,7 +12,7 @@ const LanguageSwithButton = () => {
   const pathName = usePathname();
   const router = useRouter();
   const onClickToggleLanguage = () => {
-    const newLocale = currentLocale === i18nConfig.defaultLocale ? 'ja' : 'en';
+    const newLocale = currentLocale === i18nConfig.defaultLocale ? 'ja' : defaultLanguage;
     router.push(
       pathName.startsWith(`/${currentLocale}`)
         ? pathName.replace(`/${currentLocale}`, `/${newLocale}`)

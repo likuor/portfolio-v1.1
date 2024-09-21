@@ -7,10 +7,10 @@ import { I18nextProvider } from 'react-i18next';
 import { initTranslations } from '@/constants/i18n/i18n';
 
 type Props = {
-  children: ReactNode;
+  resources: Resource;
   locale: string;
   namespaces: string[];
-  resources?: Resource;
+  children: ReactNode;
 };
 
 export const TranslationsProvider = ({ children, locale, namespaces, resources }: Props) => {
