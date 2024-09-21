@@ -1,8 +1,8 @@
 import { TranslationsProvider } from '@/components/provider/TranslationsProvider';
 import { initTranslations } from '@/constants/i18n/i18n';
+import { defaultLanguage } from '@/constants/i18n/settings';
 
 import Home from '../../features/Home';
-import { defaultLanguage } from '@/constants/i18n/settings';
 
 type Props = {
   params: { lang: string };
