@@ -5,10 +5,10 @@ import CountUp from 'react-countup';
 import { useTranslation } from 'react-i18next';
 
 import Circle from '@/components/decoration/Circle';
-import { aboutTabs } from '@/constants/data/aboutData';
 import { fadeIn } from '@/constants/motion/variants';
 
 import Avatar from './_components/Avatar';
+import { Tab } from './_components/Tab';
 import AboutController from './controller';
 
 type Props = {
@@ -16,7 +16,7 @@ type Props = {
 };
 
 const About = ({ lang }: Props) => {
-  const { selectedTab, yearsDevExperience, currentData, handleClick } = AboutController();
+  const { selectedTab, yearsDevExperience, AboutTabs, handleClick } = AboutController();
   const { t } = useTranslation(lang);
 
   return (
@@ -103,7 +103,7 @@ const About = ({ lang }: Props) => {
           className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
-            {aboutTabs.map((tab) => (
+            {AboutTabs.map((tab) => (
               <div
                 key={tab.id}
                 role='button'
@@ -126,29 +126,7 @@ const About = ({ lang }: Props) => {
             ))}
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-            {currentData.map((aboutItem) => (
-              <div
-                key={aboutItem.id}
-                className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
-              >
-                {/* title */}
-                <div className='font-light mb-2 md:mb-0'>
-                  <span>
-                    {aboutItem.title} - {aboutItem.period}
-                  </span>
-                  <br />
-                  <span>{aboutItem.schoolName}</span>
-                </div>
-                {/* icons */}
-                <div className='flex gap-x-4'>
-                  {aboutItem.icons?.map((icon) => (
-                    <div key={icon.id} className='text-2xl text-white'>
-                      {icon.icon}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+            <Tab selectedTab={selectedTab} />
           </div>
         </motion.div>
       </div>

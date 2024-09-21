@@ -2,9 +2,15 @@
 
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 
-import { DEVELOPER_EXPERIENCE_FROM, SEARCH_PARAMS } from '@/constants/data';
-import { aboutData, type AboutData } from '@/constants/data/aboutData';
+import { DEVELOPER_EXPERIENCE_FROM, SEARCH_PARAMS } from '@/constants';
 import yearsSinceDate from '@/utils/timeCount';
+
+import { AboutData } from './type';
+
+type Tabs = {
+  id: number;
+  name: 'skills' | 'experience' | 'education' | 'awards';
+};
 
 const AboutController = () => {
   const router = useRouter();
@@ -16,7 +22,12 @@ const AboutController = () => {
     DEVELOPER_EXPERIENCE_FROM.month,
     DEVELOPER_EXPERIENCE_FROM.day
   );
-  const currentData = aboutData[selectedTab];
+  const AboutTabs: Tabs[] = [
+    { id: 0, name: 'skills' },
+    { id: 1, name: 'experience' },
+    { id: 2, name: 'education' },
+    { id: 3, name: 'awards' },
+  ];
 
   const handleClick = (tabTitle: string) => {
     if (searchParams) {
@@ -26,7 +37,7 @@ const AboutController = () => {
     }
   };
 
-  return { selectedTab, yearsDevExperience, currentData, searchParams, handleClick };
+  return { selectedTab, yearsDevExperience, searchParams, AboutTabs, handleClick };
 };
 
 export default AboutController;

@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-import { DEVELOPER_EXPERIENCE_FROM } from '@/constants/data';
+import { DEVELOPER_EXPERIENCE_FROM } from '@/constants';
 import { fadeIn } from '@/constants/motion/variants';
 import Hero3D from '@/features/Home/_components/3d';
 import ParticlesContainer from '@/features/Home/_components/Particles';
