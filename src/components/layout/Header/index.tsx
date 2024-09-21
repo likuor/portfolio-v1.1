@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SocialMedias from './SocialMedias';
+import HeaderMenus from './HeaderMenus';
 
 const Header = () => (
   <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
@@ -18,8 +18,7 @@ const Header = () => (
             priority
           />
         </Link>
-        {/* SocialMedias */}
-        <SocialMedias />
+        <HeaderMenus />
       </div>
     </div>
   </header>
