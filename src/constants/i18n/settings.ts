@@ -1,6 +1,11 @@
 export const defaultLanguage = 'en';
 export const availableLanguages = [defaultLanguage, 'ja'];
 
+export const i18nConfig = {
+  locales: availableLanguages,
+  defaultLocale: defaultLanguage,
+};
+
 export const namespaces = ['translation'];
 
 export const getOptions = (lng = defaultLanguage) => ({

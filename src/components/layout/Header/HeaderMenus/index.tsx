@@ -1,3 +1,5 @@
+'use client';
+
 import LanguageSwithButton from './LanguageSwithButton';
 import SocialMedias from './SocialMedias';
 

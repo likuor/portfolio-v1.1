@@ -1,9 +1,21 @@
+import { TranslationsProvider } from '@/components/provider/TranslationsProvider';
+import initTranslations from '@/constants/i18n/i18n';
+
 import Home from '../../features/Home';
 
-const HomePage = async ({ params }: { params: { lang: string } }) => {
-  const { lang } = params;
+type Props = {
+  params: { lang: string };
+};
 
-  return <Home lang={lang} />;
+const HomePage = async ({ params }: Props) => {
+  const { lang } = params;
+  const { resources } = await initTranslations('en', ['translation']);
+
+  return (
+    <TranslationsProvider resources={resources} locale={lang} namespaces={['translation']}>
+      <Home lang={lang} />
+    </TranslationsProvider>
+  );
 };
 
 export default HomePage;
