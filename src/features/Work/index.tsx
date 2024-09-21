@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import Circle from '@/components/decoration/Circle';
-import { useTranslation } from '@/constants/i18n/client';
+import { useTranslation } from 'react-i18next';
 import { fadeIn } from '@/constants/motion/variants';
 import WorkSlider from '@/features/Work/_components/WorkSlider';
 

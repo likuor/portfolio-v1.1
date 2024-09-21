@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
-import { useTranslation } from '@/constants/i18n/client';
+import { useTranslation } from 'react-i18next';
 import { fadeIn } from '@/constants/motion/variants';
 
 import ContactController from './controller';
